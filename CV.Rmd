@@ -41,8 +41,8 @@ Education
 ```{r , echo = FALSE, results = "asis"}
 Education3 <- data.frame(col1 = c("2023",
                                  "2022"),
-                        col2 = c("*Dr. Ignasi Bartomeus laboratory, Estación Biológica de Doñana - CSIC (ES)* , For my internship, I am Currently working on the SHOWCASE project in the Experimental Biodiversity Area in Spain, supervised by Dr. Ignasi Bartomeus Roig and dr. Elena Velado Alonso. I study the effect of green covers in stone fruit orchards on pollinator-, spider-, and plant diversity.",
-                                 "*Plant Ecology and Nature Conservation group (prof. David Kleijn), Wageningen University and Research (NL)* For my MSc thesis, titled 'Flowers, a measurement instrument for grassland biodiversity' and supervised by Reinier de Vries MSc and Dr. Jose van Paassen, I collected and identified insects in Dutch grasslands to test the indicative value of flowers on grassland biodiversity. The study is part of the SHOWCASE project."))
+                        col2 = c("*Dr. Ignasi Bartomeus laboratory, Estación Biológica de Doñana - CSIC (ES)* For my internship, I am Currently working on the SHOWCASE project in the Experimental Biodiversity Area in Spain, supervised by Dr. Ignasi Bartomeus Roig and dr. Elena Velado Alonso. I study the effect of green covers in stone fruit orchards on pollinator-, spider-, and plant diversity.",
+                                 "*Plant Ecology and Nature Conservation group (prof. David Kleijn) Wageningen University and Research (NL)* For my MSc thesis, titled 'Flowers, a measurement instrument for grassland biodiversity' and supervised by Reinier de Vries MSc and Dr. Jose van Paassen, I collected and identified insects in Dutch grasslands to test the indicative value of flowers on grassland biodiversity. The study is part of the SHOWCASE project."))
 colnames(Education3) <- NULL
 pander::pandoc.table(Education3, split.table = Inf, split.cells = 100, justify = "left")
 ```
@@ -53,7 +53,7 @@ pander::pandoc.table(Education3, split.table = Inf, split.cells = 100, justify =
 Education2 <- data.frame(col1 = c("2019",
                                  "2018",
                                  "2017"),
-                        col2 = c("*van Hall Larenstein University of applied sciences* For my BSc thesis, titled 'Houtwallen: een insectenwalhalla in agrarisch landschap' and supervised by Jelmer van Belle MSc and dr. Arjen Strijkstra, I studied the effect of hedge rows on insect communities in grasslands and croplands. The thesis was awarded the Th. van Welderen Rengers thesis prize",
+                        col2 = c("*van Hall Larenstein University of applied sciences* For my BSc thesis, titled 'Houtwallen: een insectenwalhalla in agrarisch landschap' and supervised by Jelmer van Belle MSc and dr. Arjen Strijkstra, I studied the effect of hedge rows on insect communities in grasslands and croplands. The thesis was awarded the Th. van Welderen Rengers thesis prize.",
                                  "*Reptile, Amphibian & Fish Conservation Netherlands (RAVON)* During this internship, supervised by Richard Struijk MSc, I studied the effectiveness of green bridges in connecting reptile populations in the Veluwe area.",
                                  "*Reptile, Amphibian & Fish Conservation Netherlands (RAVON)* During this internship, supervised by Tariq Stark, I studied the prevalence of amphibiocystidium, a parasitic fungus, in palmate newt populations in the south of the Netherlands."))
 colnames(Education2) <- NULL
@@ -78,7 +78,7 @@ Work experience
 ```{r , echo = FALSE, results = "asis"}
 Work <- data.frame(col1 = c("2020 - 2021","2018 - 2020", "2017 - 2018"),
                    col2 = c("Project Manager", "Ecologist","Junior ecologist"),
-                   col3 = c("As a project manager, I carried full responsibility for the bigger projects. Next to the tasks I already had, I had to maintain contact with my clients and other stakeholders, coordinate the colleagues that were working in my projects, and control the quality of their work",
+                   col3 = c("As a project manager, I carried full responsibility for the bigger projects. Next to the tasks I already had, I had to maintain contact with my clients and other stakeholders, coordinate the colleagues that were working in my projects, and control the quality of their work.",
                             "In this position, I was responsible for the smaller projects and writing consultancy reports that were based on the results of my own fieldwork.",
                             "As a junior ecologist, I mainly performed fieldwork to bats in buildings and amphibians and fish in farmlands."
                             ))
@@ -100,15 +100,15 @@ Extra <- data.frame(col1 = c("2013 - 2022",
                             "Idylle Waadhoeke"),
                    col3 = c("The aim of this working group is to improve knowledge of the distribution of freshwater fish in the province of Friesland and to support a better protection. Being an active member for nine years and one of two coordinators for three years, I gained extensive experience with researching freshwater fish using various methods. Next to that, I organized many excursions to keep distribution data updated and to educate adults and children about the unknown flora and fauna that lives below the water surface. My contribution to this working group is one of the reasons that I was awarded the Youth Lenders Award by the NGO RAVON.",
                             "This study association at the Van Hall Larenstein University of applied sciences regularly organizes excursions and presentations about the wild flora and fauna of the Netherlands. In a team of around seven students, I was a general coordinator for two years and chairman for one year. During my chairmanship, one of the most successful activities was the on-campus Bioblitz. With the help of species experts, students, and citizens, we were able to record 431 species in the area, and even more people were reached thanks to the local media attention.",
-                            "As coordinator and volunteer of this amphibian migration road crossing project, I contributed to the safe migration of Amphibians in the city of Leeuwarden. Being a coordinator in a team of four, I was responsible for the coordination of the volunteers that helped the amphibians cross the road every morning and evening. I also gave practicals to high school students of the local school and children living in the neighborhood about amphibians and aquatic life in the area.",
-                            "In 2016, the Butterfly Association of the Netherlands awarded a €10.000 prize to the best citizen initiative to create a local wild butterfly garden. In consultation with the municipality of Franeker, my hometown, they agreed to provide an area of 2 hectares. I gathered a group of citizens, a primary school, and a gardening business that were willing to participate, and after presenting our plan to the Butterfly Association, we won the prize, and the butterfly garden was realized. Nowadays it is a popular place for the citizens of Franeker to visit, bringing them closer to nature."))
+                            "As coordinator and volunteer of this amphibian migration road crossing project, I contributed to the safe migration of Amphibians in the city of Leeuwarden. Being a coordinator in a team of four, I was responsible for the coordination of the volunteers that helped the amphibians cross the road every morning and evening. I also gave practicals  about amphibians and aquatic animals to high school classes of the local school and children living in the neighborhood.",
+                            "In 2016, the Butterfly Association of the Netherlands awarded a €10.000 prize to the best citizen initiative to create a local wild butterfly garden. I made an agreement with the municipality of Franeker, my hometown, that they would provide an area of 2 hectares if I could win the contest. I gathered a group of citizens, a primary school, and a gardening business that were willing to participate, and after presenting our plan to the Butterfly Association, we won the prize, and the butterfly garden was realized. Nowadays it is a popular place for the citizens of Franeker to visit."))
 colnames(Extra) <- NULL
 pander::pandoc.table(Extra, split.table = Inf, split.cells = 100, justify = "left")
 ```
 
 Skills
 ------
-**Driving license**
+**Driving license**<br>
 License AM-B since February 2017
 
 **Languages**
