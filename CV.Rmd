@@ -1,7 +1,5 @@
 ---
-output: 
-  html_document:
-    keep_md: TRUE
+output: github_document
 ---
 
 ```{r setup, include=FALSE}
@@ -23,7 +21,7 @@ info <- data.frame(col1 = c("Date of birth",
                             "remcoploeg96@gmail.com",
                             "+31 627611760"))
 colnames(info) <- NULL
-pander::pandoc.table(info, split.table = Inf, split.cells = 30, justify = "left")
+pander::pandoc.table(info, split.table = Inf, split.cells = 100, justify = "left")
 ```
 
 Profile
@@ -44,7 +42,7 @@ Education3 <- data.frame(col1 = c("2023",
                         col2 = c("*Dr. Ignasi Bartomeus laboratory, Estación Biológica de Doñana - CSIC (ES)* , For my internship, I am Currently working on the SHOWCASE project in the Experimental Biodiversity Area in Spain, supervised by Dr. Ignasi Bartomeus Roig and dr. Elena Velado Alonso. I study the effect of green covers in stone fruit orchards on pollinator-, spider-, and plant diversity.",
                                  "*Plant Ecology and Nature Conservation group (prof. David Kleijn), Wageningen University and Research (NL)* For my MSc thesis, titled 'Flowers, a measurement instrument for grassland biodiversity' and supervised by Reinier de Vries MSc and dr. Jose van Paassen, I collected and identified insects in Dutch grasslands to test the indicative value of flowers on grassland biodiversity. The study is part of the SHOWCASE project."))
 colnames(Education3) <- NULL
-pander::pandoc.table(Education3, split.table = Inf, split.cells = 50, justify = "left")
+pander::pandoc.table(Education3, split.table = Inf, split.cells = 100, justify = "left")
 ```
 
 **BSc Animal management**, major Wildlife Management, Van Hall Larenstein University of applied sciences. 2015 - 2019
@@ -57,7 +55,7 @@ Education2 <- data.frame(col1 = c("2019",
                                  "*Reptile, Amphibian & Fish Conservation Netherlands (RAVON)* During this internship, supervised by Richard Struijk MSc, I studied the effectiveness of green bridges in connecting reptile populations in the Veluwe area.",
                                  "*Reptile, Amphibian & Fish Conservation Netherlands (RAVON)* During this internship, supervised by Tariq Stark, I studied the prevelance of amphibiocystidium, a parasitic fungus, in palmate newt populations in the south of the Netherlands."))
 colnames(Education2) <- NULL
-pander::pandoc.table(Education2, split.table = Inf, split.cells = 50, justify = "left")
+pander::pandoc.table(Education2, split.table = Inf, split.cells = 100, justify = "left")
 ```
 
 **Grammar school**, subjects science & technology and science & health, Christelijk Gymnasium Beyers Naudé. 2008 - 2015 
@@ -68,7 +66,7 @@ Education1 <- data.frame(col1 = c("2019",
                         col2 = c("I gained membership in the Socrates International Honour Society, a network of high-achieving students, by completing grammar school with an average grade of over 7.5.",
                                  "I was awarded the NVON certificate of special achievement in chemistry by passing my exam in chemistry with a 9.6 grade."))
 colnames(Education1) <- NULL
-pander::pandoc.table(Education1, split.table = Inf, split.cells = 50, justify = "left")
+pander::pandoc.table(Education1, split.table = Inf, split.cells = 100, justify = "left")
 ```
 
 Work experience
@@ -83,9 +81,28 @@ Work <- data.frame(col1 = c("2020 - 2021","2018 - 2020", "2017 - 2018"),
                             "As a junior ecologist, I mainly performed field work to bats in buildings and amphibians and fish in farmlands."
                             ))
 colnames(Work) <- NULL
-pander::pandoc.table(Work, split.table = Inf, split.cells = 25, justify = "left")
+pander::pandoc.table(Work, split.table = Inf, split.cells = 100, justify = "left")
 ```
 
 Extracurricular activities
 --------------------------
+
+```{r , echo = FALSE, results = "asis"}
+WVOF <- data.frame(col1 = c("2013 - 2022",
+                            "2016 - 2019",
+                            "2015 & 2018",
+                            "2016 - 2018"),
+                   col2 = c("Werkgroep VissenOnderzoek Friesland",
+                            "Study association Students for Wildlife",
+                            "Potmarge Amfibieën Doelgroep",
+                            "Idylle Waadhoeke"),
+                   col3 = c("",
+                            "",
+                            "",
+                            ""))
+colnames(WVOF) <- NULL
+pander::pandoc.table(WVOF, split.table = Inf, split.cells = 100, justify = "left")
+```
+
+
 
