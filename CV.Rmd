@@ -1,0 +1,91 @@
+---
+output: 
+  html_document:
+    keep_md: TRUE
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(pander)
+panderOptions('table.alignment.default',
+     function(df) ifelse(sapply(df, is.numeric), 'right', 'left'))
+```
+
+Remco Ploeg
+======================
+```{r , echo = FALSE, results = "asis"}
+info <- data.frame(col1 = c("Date of birth",
+                            "Nationality",
+                            "E-mail",
+                            "Mobile number"),
+                   col2 = c("September 10, 1996",
+                            "Dutch",
+                            "remcoploeg96@gmail.com",
+                            "+31 627611760"))
+colnames(info) <- NULL
+pander::pandoc.table(info, split.table = Inf, split.cells = 30, justify = "left")
+```
+
+Profile
+-------
+* Passionate about nature and driven by curiosity and eagerness to learn;
+
+* Highly experienced field worker with profound interest in data analysis and programming;
+
+* Enthusiastic in sharing my passion to raise awareness of the importance of nature.
+
+Education
+---------
+**MSc Forest and Nature Conservation**, specialisation ecology, Wageningen University & Research. 2021 - present 
+
+```{r , echo = FALSE, results = "asis"}
+Education3 <- data.frame(col1 = c("2023",
+                                 "2022"),
+                        col2 = c("*Dr. Ignasi Bartomeus laboratory, Estación Biológica de Doñana - CSIC (ES)* , For my internship, I am Currently working on the SHOWCASE project in the Experimental Biodiversity Area in Spain, supervised by Dr. Ignasi Bartomeus Roig and dr. Elena Velado Alonso. I study the effect of green covers in stone fruit orchards on pollinator-, spider-, and plant diversity.",
+                                 "*Plant Ecology and Nature Conservation group (prof. David Kleijn), Wageningen University and Research (NL)* For my MSc thesis, titled 'Flowers, a measurement instrument for grassland biodiversity' and supervised by Reinier de Vries MSc and dr. Jose van Paassen, I collected and identified insects in Dutch grasslands to test the indicative value of flowers on grassland biodiversity. The study is part of the SHOWCASE project."))
+colnames(Education3) <- NULL
+pander::pandoc.table(Education3, split.table = Inf, split.cells = 50, justify = "left")
+```
+
+**BSc Animal management**, major Wildlife Management, Van Hall Larenstein University of applied sciences. 2015 - 2019
+
+```{r , echo = FALSE, results = "asis"}
+Education2 <- data.frame(col1 = c("2019",
+                                 "2018",
+                                 "2017"),
+                        col2 = c("*van Hall Larenstein University of applied sciences* For my BSc thesis, titled 'Houtwallen: een insectenwalhalla in agrarisch landschap' and supervised by Jelmer van Belle MSc and dr. Arjen Strijkstra, I studied the effect of hedge rows on insect communities in grasslands and croplands. The thesis is awarded the Th. van Welderen Rengers thesis prize",
+                                 "*Reptile, Amphibian & Fish Conservation Netherlands (RAVON)* During this internship, supervised by Richard Struijk MSc, I studied the effectiveness of green bridges in connecting reptile populations in the Veluwe area.",
+                                 "*Reptile, Amphibian & Fish Conservation Netherlands (RAVON)* During this internship, supervised by Tariq Stark, I studied the prevelance of amphibiocystidium, a parasitic fungus, in palmate newt populations in the south of the Netherlands."))
+colnames(Education2) <- NULL
+pander::pandoc.table(Education2, split.table = Inf, split.cells = 50, justify = "left")
+```
+
+**Grammar school**, subjects science & technology and science & health, Christelijk Gymnasium Beyers Naudé. 2008 - 2015 
+
+```{r , echo = FALSE, results = "asis"}
+Education1 <- data.frame(col1 = c("2019",
+                                 "2019"),
+                        col2 = c("I gained membership in the Socrates International Honour Society, a network of high-achieving students, by completing grammar school with an average grade of over 7.5.",
+                                 "I was awarded the NVON certificate of special achievement in chemistry by passing my exam in chemistry with a 9.6 grade."))
+colnames(Education1) <- NULL
+pander::pandoc.table(Education1, split.table = Inf, split.cells = 50, justify = "left")
+```
+
+Work experience
+---------------
+**JM ecologie b.v.** 2017 - 2021 
+
+```{r , echo = FALSE, results = "asis"}
+Work <- data.frame(col1 = c("2020 - 2021","2018 - 2020", "2017 - 2018"),
+                   col2 = c("Project Manager", "Ecologist","Junior ecologist"),
+                   col3 = c("As a project manager, I carried full responsability for the bigger projects. Next to the tasks I already had, I had to maintain contact with my clients and other stakeholders, coordinate the colleagues that were working in my project, and control the quality of their work",
+                            "In this position, I was responsable for the smaller projects and writing consultancy reports that were based on the results of my own field work.",
+                            "As a junior ecologist, I mainly performed field work to bats in buildings and amphibians and fish in farmlands."
+                            ))
+colnames(Work) <- NULL
+pander::pandoc.table(Work, split.table = Inf, split.cells = 25, justify = "left")
+```
+
+Extracurricular activities
+--------------------------
+
